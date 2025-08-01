@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.adeadfed'
+version = '1.2.1'
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.portswigger.burp.extensions:montoya-api:2024.7'
+    implementation 'com.intellij:javac2:7.0.3'
+    implementation 'com.intellij:forms_rt:7.0.3'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.adeadfed.PwnFoxForChromium',
+            'Implementation-Title': 'PwnFox-For-Chromium',
+            'Implementation-Version': version
+        )
+    }
+    
+    // Включаем все зависимости в JAR
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+// Копируем ресурсы в JAR
+processResources {
+    from 'src/main/resources'
+    include '**/*'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+// Настройка кодировки
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+} 
