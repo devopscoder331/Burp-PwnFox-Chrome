@@ -1,4 +1,4 @@
-package com.adeadfed;
+package com.burp;
 
 
 import burp.api.montoya.core.HighlightColor;
@@ -7,7 +7,7 @@ import burp.api.montoya.proxy.http.ProxyRequestHandler;
 import burp.api.montoya.proxy.http.ProxyRequestReceivedAction;
 import burp.api.montoya.proxy.http.ProxyRequestToBeSentAction;
 
-public class PwnFoxForChromiumRequestHandler implements ProxyRequestHandler {
+public class PwnFoxChromeRequestHandler implements ProxyRequestHandler {
     private final String PWNFOX_HEADER = "X-Pwnfox-Color";
     
     @Override

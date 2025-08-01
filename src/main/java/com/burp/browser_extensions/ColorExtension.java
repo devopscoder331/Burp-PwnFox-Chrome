@@ -1,6 +1,6 @@
-package com.adeadfed.browser_extensions;
+package com.burp.browser_extensions;
 
-import com.adeadfed.common.ProfileColors;
+import com.burp.common.ProfileColors;
 
 import java.io.IOException;
 import java.io.InputStream;

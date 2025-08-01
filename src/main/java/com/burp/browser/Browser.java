@@ -1,12 +1,12 @@
-package com.adeadfed.browser;
+package com.burp.browser;
 
 import java.io.IOException;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
-import com.adeadfed.common.ProfileColors;
-import com.adeadfed.browser_extensions.BrowserExtensionsLoader;
+import com.burp.common.ProfileColors;
+import com.burp.browser_extensions.BrowserExtensionsLoader;
 
 public class Browser {
     private String exePath;

@@ -1,13 +1,13 @@
-package com.adeadfed.preferences;
+package com.burp.preferences;
 
 import burp.api.montoya.persistence.Preferences;
 
-public class PwnFoxForChromiumPreferences {
+public class PwnFoxChromePreferences {
     private Preferences montoyaPreferences;
     public BrowserPathPreference browserPath;
     public ProfilesDirPreference profilesDir;
 
-    public PwnFoxForChromiumPreferences(Preferences montoyaPreferences) throws Exception {
+    public PwnFoxChromePreferences(Preferences montoyaPreferences) throws Exception {
         this.montoyaPreferences = montoyaPreferences;
         this.browserPath = new BrowserPathPreference();
         this.profilesDir = new ProfilesDirPreference();

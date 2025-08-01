@@ -1,12 +1,12 @@
-package com.adeadfed;
+package com.burp;
 
-import com.adeadfed.preferences.Preference;
+import com.burp.preferences.Preference;
 
-import com.adeadfed.common.ProfileColors;
-import com.adeadfed.browser.Browser;
-import com.adeadfed.validators.FsValidator;
+import com.burp.common.ProfileColors;
+import com.burp.browser.Browser;
+import com.burp.validators.FsValidator;
 
-import com.adeadfed.validators.TextFieldVerifier;
+import com.burp.validators.TextFieldVerifier;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
@@ -18,9 +18,9 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import java.util.Locale;
 
-public class PwnFoxForChromiumUI {
+public class PwnFoxChromeUI {
     private JPanel ui;
-    private PwnFoxForChromium pwnChromiumExtension;
+    private PwnFoxChrome pwnChromiumExtension;
     private JTextField pwnChromeExePath;
     private JTextField pwnChromeProfilesPath;
     private JButton chooseExeButton;
@@ -99,11 +99,11 @@ public class PwnFoxForChromiumUI {
         }
     }
 
-    private void setPwnChromiumExtension(PwnFoxForChromium extension) {
+    private void setPwnChromiumExtension(PwnFoxChrome extension) {
         this.pwnChromiumExtension = extension;
     }
 
-    public PwnFoxForChromiumUI(PwnFoxForChromium pwnChromiumExtension) {
+    public PwnFoxChromeUI(PwnFoxChrome pwnChromiumExtension) {
         setPwnChromiumExtension(pwnChromiumExtension);
 
         pwnChromeExePath.setInputVerifier(new TextFieldVerifier(FsValidator::isChromiumExecutableValid));
@@ -169,7 +169,7 @@ public class PwnFoxForChromiumUI {
         label3.setText("Settings");
         settingsPanel.add(label3, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label4 = new JLabel();
-        label4.setText("Path to the PwnFox For Chromium profile data directory");
+        label4.setText("Path to the PwnFox Chrome profile data directory");
         settingsPanel.add(label4, new GridConstraints(5, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         pwnChromeProfilesPath = new JTextField();
         pwnChromeProfilesPath.setEditable(true);

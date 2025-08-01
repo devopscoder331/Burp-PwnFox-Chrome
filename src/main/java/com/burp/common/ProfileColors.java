@@ -1,4 +1,4 @@
-package com.adeadfed.common;
+package com.burp.common;
 
 import java.awt.*;
 

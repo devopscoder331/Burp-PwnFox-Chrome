@@ -1,4 +1,4 @@
-package com.adeadfed.preferences;
+package com.burp.preferences;
 
 import java.nio.file.Files;
 import java.nio.file.FileSystem;
@@ -41,9 +41,9 @@ public class BrowserPathPreference extends Preference {
             if (e.getCause() instanceof java.nio.file.AccessDeniedException) {
                 return null;
             }
-            throw new Exception("PwnFox For Chromium - Error getting default browser path", e);
+            throw new Exception("PwnFox Chrome - Error getting default browser path", e);
         } catch (Exception e) {
-            throw new Exception("PwnFox For Chromium - Error getting default browser path", e);
+            throw new Exception("PwnFox Chrome - Error getting default browser path", e);
         }
     }
 }

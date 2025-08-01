@@ -1,4 +1,4 @@
-package com.adeadfed.preferences;
+package com.burp.preferences;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -25,7 +25,7 @@ public class ProfilesDirPreference extends Preference {
             }
             return null;
         } catch (Exception e) {
-            throw new Exception("PwnFox For Chromium - Error getting default profiles directory", e);
+            throw new Exception("PwnFox Chrome - Error getting default profiles directory", e);
         }
     }
 }

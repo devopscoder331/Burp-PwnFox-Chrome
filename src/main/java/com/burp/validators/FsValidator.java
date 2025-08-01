@@ -1,4 +1,4 @@
-package com.adeadfed.validators;
+package com.burp.validators;
 
 import java.io.IOException;
 import java.nio.file.Files;

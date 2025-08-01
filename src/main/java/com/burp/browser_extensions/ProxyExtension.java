@@ -1,4 +1,4 @@
-package com.adeadfed.browser_extensions;
+package com.burp.browser_extensions;
 
 
 import java.io.IOException;

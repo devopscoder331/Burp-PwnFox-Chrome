@@ -1,6 +1,6 @@
-package com.adeadfed.browser_extensions;
+package com.burp.browser_extensions;
 
-import com.adeadfed.validators.FsValidator;
+import com.burp.validators.FsValidator;
 
 import java.io.IOException;
 import java.io.InputStream;
