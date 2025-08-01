@@ -3,8 +3,8 @@ plugins {
     id 'application'
 }
 
-group = 'com.adeadfed'
-version = '1.2.1'
+group = 'com.burp'
+version = '1.0.0'
 sourceCompatibility = '17'
 targetCompatibility = '17'
 
@@ -21,8 +21,8 @@ dependencies {
 jar {
     manifest {
         attributes(
-            'Main-Class': 'com.adeadfed.PwnFoxForChromium',
-            'Implementation-Title': 'PwnFox-For-Chromium',
+            'Main-Class': 'com.burp.PwnFoxChrome',
+            'Implementation-Title': 'PwnFox-Chrome',
             'Implementation-Version': version
         )
     }
