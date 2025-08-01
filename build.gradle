@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.burp'
-version = '1.2.1'
+version = '1.0.0'
 sourceCompatibility = '17'
 targetCompatibility = '17'
 
